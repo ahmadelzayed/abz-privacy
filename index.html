@@ -3,204 +3,153 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy | Sheikh Abou Baker Al-Zahabi App</title>
+<title>Privacy Policy | سياسة الخصوصية</title>
 <style>
-  :root {
-    --bg: #f7f5f0;
-    --card: #ffffff;
-    --text: #1f2a24;
-    --muted: #5a665f;
-    --accent: #6e5544;
-    --line: #e2dccf;
-  }
+  :root { --bg:#fbf8f1; --fg:#1d2a24; --muted:#5b6a62; --accent:#0e3b2c; --line:#e3dccb; --card:#ffffff; }
   @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #151e19;
-      --card: #1c2822;
-      --text: #ece8df;
-      --muted: #aebbb3;
-      --accent: #a98c76;
-      --line: #2d3b34;
-    }
+    :root { --bg:#0f1a15; --fg:#e8efe9; --muted:#9bb0a4; --accent:#7fc4a2; --line:#24372e; --card:#15241d; }
   }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans Arabic", Arial, sans-serif;
-    line-height: 1.7;
-  }
-  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
-  .switch { display: flex; gap: 8px; justify-content: center; margin-bottom: 20px; }
-  .switch button {
-    border: 1px solid var(--accent);
-    background: transparent;
-    color: var(--accent);
-    padding: 8px 20px;
-    border-radius: 999px;
-    font-size: 15px;
-    cursor: pointer;
-  }
-  .switch button.active { background: var(--accent); color: var(--bg); }
-  article {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 20px;
-    padding: 28px 24px;
-  }
-  h1 { font-size: 26px; margin: 0 0 4px; color: var(--accent); }
-  h2 { font-size: 18px; margin: 28px 0 6px; color: var(--accent); }
-  p, li { font-size: 16px; }
-  ul { padding-inline-start: 22px; }
-  .meta { color: var(--muted); font-size: 14px; margin-bottom: 8px; }
-  a { color: var(--accent); }
-  .lang { display: none; }
-  .lang.show { display: block; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Naskh Arabic",Tahoma,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  nav { display:flex; gap:8px; margin-bottom:24px; }
+  nav a { padding:8px 16px; border:1px solid var(--line); border-radius:999px; color:var(--accent); text-decoration:none; font-weight:600; background:var(--card); }
+  section.lang { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:24px 20px; margin-bottom:32px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; color:var(--accent); }
+  h2 { font-size:1.15rem; margin:28px 0 6px; color:var(--accent); }
+  p, li { margin:6px 0; }
+  ul { padding-inline-start:1.3em; }
+  .muted { color:var(--muted); font-size:.92rem; }
+  a { color:var(--accent); }
 </style>
 </head>
 <body>
 <main>
-  <div class="switch">
-    <button id="btn-en" class="active" type="button">English</button>
-    <button id="btn-ar" type="button">العربية</button>
-  </div>
+<nav>
+  <a href="#en">English</a>
+  <a href="#ar">العربية</a>
+  <a href="delete-account.html">Delete account / حذف الحساب</a>
+</nav>
 
-  <!-- ENGLISH -->
-  <article id="en" class="lang show" lang="en" dir="ltr">
-    <h1>Privacy Policy</h1>
-    <p class="meta">Sheikh Abou Baker Al-Zahabi App &middot; Effective date: 9 October 2026</p>
+<!-- ===================== ENGLISH ===================== -->
+<section class="lang" id="en" lang="en" dir="ltr">
+  <h1>Privacy Policy</h1>
+  <p class="muted">Dr Sheikh Abou Baker Al-Zahabi app (Android and iOS). Effective date: 26 October 2026.</p>
 
-    <h2>1. Who we are</h2>
-    <p>This app shares the lessons, news, prayer times and tools of Sheikh Dr. Abou Baker Yahya Al-Zahabi. It is published and maintained by Ahmad Zayed ("we", "us"). For any privacy question, contact us at <a href="mailto:ahmadelzayed@gmail.com">ahmadelzayed@gmail.com</a>.</p>
+  <p>This app is published by Ahmad Zayed ("we", "us") for Sheikh Dr. Abou Baker Yahya Al-Zahabi. It offers news and events from the Sheikh, a way to send him questions, prayer times, Qibla direction, the Quran, azkar and other Islamic tools. This policy explains what information the app uses and your choices.</p>
 
-    <h2>2. Information we collect</h2>
-    <ul>
-      <li><strong>Account information:</strong> your email address and password. Passwords are handled by Firebase Authentication; we never see or store your password in readable form.</li>
-      <li><strong>Profile information:</strong> your name, gender, date of birth, an optional profile photo, the date your account was created, and your account type (regular user or administrator).</li>
-      <li><strong>Questions:</strong> the questions you send to the Sheikh through the app, together with the account they were sent from.</li>
-      <li><strong>Location (optional):</strong> if you allow it, your device location is used on your phone only, to calculate prayer times and the Qibla direction. It is not sent to our servers and we do not store it.</li>
-      <li><strong>Information kept only on your device:</strong> your settings (language, theme, prayer calculation options), Quran bookmarks and reading position, Azkar preferences, and prayer reminders you choose to schedule. This information stays on your phone and is not sent to us.</li>
-    </ul>
+  <h2>1. Information we collect</h2>
+  <ul>
+    <li><strong>Account information.</strong> When you create an account we store your name, email address, date of birth and gender, and your role in the app (user or admin). You can sign in with email and password, with Google, or (on iOS) with Apple. If you sign in with Google or Apple, we receive your name, email and, for Google, your profile photo link. The date of birth is a profile field.</li>
+    <li><strong>Questions you send to the Sheikh.</strong> A question is stored with its text, its status and the time rounded to the hour. It is <strong>not linked to your name, email or account</strong>, so nobody (including the Sheikh and the app's admins) can see who asked.</li>
+    <li><strong>Posts and photos.</strong> News and event posts are written by the Sheikh's admins. Admins can upload photos and a profile picture, which are stored in cloud storage and shown to all users with the admin's name. Regular users do not upload photos.</li>
+    <li><strong>Notification identifiers.</strong> To deliver notifications we use Firebase Cloud Messaging, which creates a device token. We subscribe the device to anonymous language topics (Arabic or English) for news and event alerts. Admin devices also subscribe to a topic that alerts them when a question arrives.</li>
+    <li><strong>Location.</strong> If you allow it, the app reads your approximate location only on your device to calculate prayer times and the Qibla direction. The location is <strong>not sent to our servers</strong>. The compass sensor is also used only on your device.</li>
+    <li><strong>Settings on your device.</strong> Your language, theme, notification choices and similar preferences are saved locally on your phone. Prayer and Friday reminders are scheduled locally and do not need a server.</li>
+  </ul>
 
-    <h2>3. How we use information</h2>
-    <ul>
-      <li>To create and manage your account and show your profile.</li>
-      <li>To receive your questions and let the Sheikh's team answer them.</li>
-      <li>To calculate prayer times and the Qibla direction for where you are.</li>
-      <li>To show the reminders you enable.</li>
-      <li>To keep the app secure and working.</li>
-    </ul>
+  <h2>2. What we do not do</h2>
+  <p>The app contains no advertising, no analytics and no tracking SDKs. We do not sell or rent your information, and we do not use it for advertising or profiling.</p>
 
-    <h2>4. Services we use</h2>
-    <p>Your account and profile data, and your questions, are stored with Google Firebase (Firebase Authentication and Cloud Firestore). Google processes this data for us under its own terms and privacy policy (<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>). The app does not show advertising and does not sell your data.</p>
+  <h2>3. How we use information</h2>
+  <ul>
+    <li>to create and manage your account and sign you in;</li>
+    <li>to show news and events and to receive questions for the Sheikh;</li>
+    <li>to send the notifications you have chosen to receive;</li>
+    <li>to calculate prayer times and Qibla on your device;</li>
+    <li>to keep the app secure and to follow the law.</li>
+  </ul>
 
-    <h2>5. Who can see your information</h2>
-    <p>Administrators of the app (the Sheikh and his team) can see the questions you submit and the account details attached to them. We do not share your information with anyone else, except where the law requires it.</p>
+  <h2>4. Permissions the app may request</h2>
+  <ul>
+    <li><strong>Notifications</strong>, to show news alerts and prayer and Friday reminders.</li>
+    <li><strong>Exact alarms and boot completed</strong> (Android), so prayer reminders go off at the exact time and are rescheduled after the phone restarts.</li>
+    <li><strong>Approximate location</strong>, for prayer times and Qibla. You can refuse it and choose a city manually if the app offers that option.</li>
+    <li><strong>Photo library or camera</strong>, only for admins who add photos to posts or set a profile picture.</li>
+    <li><strong>Internet access, network state, vibration and wake lock</strong>, to load content and deliver reminders.</li>
+  </ul>
 
-    <h2>6. Keeping and deleting your data</h2>
-    <p>We keep your information while your account is active. You can delete your account from inside the app, which removes your account and profile data. You can also ask us to delete your data by emailing <a href="mailto:ahmadelzayed@gmail.com">ahmadelzayed@gmail.com</a> from the email address of your account.</p>
+  <h2>5. Service providers and storage</h2>
+  <p>We use Google Firebase (Authentication, Cloud Firestore, Cloud Storage, Cloud Functions and Cloud Messaging) to run the app. Your data is stored and processed on Google's servers, under Google's own privacy terms: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Signing in with Google or Apple is handled by those companies. The Quran text comes from the Tanzil project and is bundled inside the app.</p>
 
-    <h2>7. Your choices</h2>
-    <ul>
-      <li>You can view and edit your profile in the app.</li>
-      <li>You can turn off location permission at any time in your phone settings. Prayer times will then use the default city.</li>
-      <li>You can turn off notifications at any time in your phone settings.</li>
-    </ul>
+  <h2>6. Sharing</h2>
+  <p>We do not share your personal information with third parties, except Google as our service provider as described above, or when the law requires it. Posts written by admins, with the admin's name and photo, are visible to all signed-in users.</p>
 
-    <h2>8. Children</h2>
-    <p>The app is not directed at children under 13, and we do not knowingly collect their information. If you believe a child has given us information, contact us and we will delete it.</p>
+  <h2>7. Keeping and deleting your data</h2>
+  <p>We keep your account information for as long as your account exists. You can delete your account at any time from inside the app (profile screen, "Delete account"). This removes your profile data and your sign-in account (and the profile picture if you are an admin). You can also ask us to delete it by email, as explained on the <a href="delete-account.html">account deletion page</a>. Questions you sent are not linked to you, so they stay as anonymous text.</p>
 
-    <h2>9. Security</h2>
-    <p>We rely on Firebase security features and access rules to protect your data. No system is perfectly secure, but we work to keep your information safe.</p>
+  <h2>8. Children</h2>
+  <p>The app is for a general audience and is not designed for children. We do not knowingly collect information from children under 13. If you believe a child has created an account, please contact us and we will delete it.</p>
 
-    <h2>10. Changes to this policy</h2>
-    <p>If we change this policy, we will update the date at the top of this page. Please check it from time to time.</p>
+  <h2>9. Security</h2>
+  <p>Data travels over encrypted connections, and access to stored data is limited by security rules, so users can read only what they are allowed to read. No system is perfectly secure, but we work to protect your information.</p>
 
-    <h2>11. Contact</h2>
-    <p>Ahmad Zayed &middot; <a href="mailto:ahmadelzayed@gmail.com">ahmadelzayed@gmail.com</a></p>
-  </article>
+  <h2>10. Changes to this policy</h2>
+  <p>We may update this policy. The effective date at the top shows the latest version, and significant changes will be announced in the app.</p>
 
-  <!-- ARABIC -->
-  <article id="ar" class="lang" lang="ar" dir="rtl">
-    <h1>سياسة الخصوصية</h1>
-    <p class="meta">تطبيق الشيخ أبو بكر الذهبي &middot; تاريخ السريان: 9 تشرين الأول (أكتوبر) 2026</p>
+  <h2>11. Contact</h2>
+  <p>Questions or requests about your data: <a href="mailto:ahmadelzayed@gmail.com">ahmadelzayed@gmail.com</a></p>
+</section>
 
-    <h2>1. من نحن</h2>
-    <p>يعرض هذا التطبيق دروس الشيخ الدكتور أبو بكر يحيى الذهبي وأخباره ومواقيت الصلاة وأدوات أخرى. ينشره ويتولى صيانته أحمد زايد («نحن»). لأي استفسار عن الخصوصية، تواصل معنا على <a href="mailto:ahmadelzayed@gmail.com">ahmadelzayed@gmail.com</a>.</p>
+<!-- ===================== ARABIC ===================== -->
+<section class="lang" id="ar" lang="ar" dir="rtl">
+  <h1>سياسة الخصوصية</h1>
+  <p class="muted">تطبيق الشيخ د. أبو بكر الذهبي (أندرويد وآيفون). تاريخ السريان: 26 تشرين الأول 2026.</p>
 
-    <h2>2. المعلومات التي نجمعها</h2>
-    <ul>
-      <li><strong>معلومات الحساب:</strong> بريدك الإلكتروني وكلمة المرور. تتولى خدمة Firebase Authentication التعامل مع كلمات المرور، ولا نطّلع عليها ولا نحتفظ بها بصيغة مقروءة.</li>
-      <li><strong>معلومات الملف الشخصي:</strong> اسمك وجنسك وتاريخ ميلادك وصورة شخصية اختيارية وتاريخ إنشاء الحساب ونوع الحساب (مستخدم عادي أو مشرف).</li>
-      <li><strong>الأسئلة:</strong> الأسئلة التي ترسلها إلى الشيخ عبر التطبيق، مع الحساب الذي أُرسلت منه.</li>
-      <li><strong>الموقع (اختياري):</strong> إذا سمحت بذلك، يُستخدم موقع جهازك على هاتفك فقط لحساب مواقيت الصلاة واتجاه القبلة. لا يُرسل إلى خوادمنا ولا نحتفظ به.</li>
-      <li><strong>معلومات تبقى على جهازك فقط:</strong> إعداداتك (اللغة والمظهر وخيارات حساب مواقيت الصلاة)، وإشاراتك المرجعية وموضع قراءتك في القرآن، وتفضيلات الأذكار، وتنبيهات الصلاة التي تجدولها. تبقى هذه المعلومات على هاتفك ولا تُرسل إلينا.</li>
-    </ul>
+  <p>ينشر هذا التطبيق أحمد زايد («نحن») لصالح فضيلة الشيخ الدكتور أبو بكر يحيى الذهبي. يقدّم التطبيق أخبار الشيخ وفعالياته، وإمكانية إرسال الأسئلة إليه، ومواقيت الصلاة، واتجاه القبلة، والقرآن الكريم، والأذكار، وأدوات إسلامية أخرى. توضّح هذه السياسة المعلومات التي يستخدمها التطبيق وخياراتك بشأنها.</p>
 
-    <h2>3. كيف نستخدم المعلومات</h2>
-    <ul>
-      <li>لإنشاء حسابك وإدارته وعرض ملفك الشخصي.</li>
-      <li>لاستلام أسئلتك ليتمكن فريق الشيخ من الإجابة عنها.</li>
-      <li>لحساب مواقيت الصلاة واتجاه القبلة بحسب مكانك.</li>
-      <li>لعرض التنبيهات التي تفعّلها.</li>
-      <li>للحفاظ على أمان التطبيق وحسن عمله.</li>
-    </ul>
+  <h2>١. المعلومات التي نجمعها</h2>
+  <ul>
+    <li><strong>معلومات الحساب.</strong> عند إنشاء حساب نحفظ اسمك وبريدك الإلكتروني وتاريخ ميلادك وجنسك ودورك في التطبيق (مستخدم أو مشرف). يمكنك تسجيل الدخول بالبريد وكلمة المرور أو بحساب Google أو (على آيفون) بحساب Apple. عند الدخول عبر Google أو Apple نستلم اسمك وبريدك، وعبر Google رابط صورة ملفك الشخصي. تاريخ الميلاد حقل في الملف الشخصي.</li>
+    <li><strong>الأسئلة المرسلة إلى الشيخ.</strong> يُحفظ السؤال بنصّه وحالته ووقته مقرّبًا إلى الساعة. وهو <strong>غير مرتبط باسمك أو بريدك أو حسابك</strong>، فلا يستطيع أحد، بمن فيهم الشيخ ومشرفو التطبيق، معرفة من أرسله.</li>
+    <li><strong>المنشورات والصور.</strong> يكتب المشرفون منشورات الأخبار والفعاليات، ويستطيعون رفع صور وصورة شخصية تُحفظ في التخزين السحابي وتظهر لجميع المستخدمين مع اسم المشرف. المستخدمون العاديون لا يرفعون صورًا.</li>
+    <li><strong>معرّفات الإشعارات.</strong> لإيصال الإشعارات نستخدم Firebase Cloud Messaging الذي ينشئ رمزًا للجهاز. نشترك بالجهاز في مواضيع لغوية مجهولة الهوية (عربي أو إنكليزي) لتنبيهات الأخبار والفعاليات. وتشترك أجهزة المشرفين أيضًا في موضوع ينبّههم عند وصول سؤال.</li>
+    <li><strong>الموقع.</strong> إذا سمحت بذلك يقرأ التطبيق موقعك التقريبي على جهازك فقط لحساب مواقيت الصلاة واتجاه القبلة، و<strong>لا يُرسَل الموقع إلى خوادمنا</strong>. كذلك يُستخدم حسّاس البوصلة على جهازك فقط.</li>
+    <li><strong>الإعدادات على جهازك.</strong> تُحفظ اللغة والمظهر وخيارات الإشعارات وما شابهها على هاتفك. وتُجدوَل تذكيرات الصلاة والجمعة على الجهاز نفسه دون حاجة إلى خادم.</li>
+  </ul>
 
-    <h2>4. الخدمات التي نستخدمها</h2>
-    <p>تُحفظ بيانات حسابك وملفك الشخصي وأسئلتك لدى Google Firebase (خدمتا Firebase Authentication وCloud Firestore). تعالج Google هذه البيانات نيابةً عنا وفق شروطها وسياسة الخصوصية الخاصة بها (<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>). لا يعرض التطبيق إعلانات ولا نبيع بياناتك.</p>
+  <h2>٢. ما لا نفعله</h2>
+  <p>لا يحتوي التطبيق على إعلانات ولا أدوات تحليل ولا تتبّع. ولا نبيع معلوماتك ولا نؤجّرها، ولا نستخدمها للإعلان أو لبناء ملفات تعريفية.</p>
 
-    <h2>5. من يستطيع الاطلاع على معلوماتك</h2>
-    <p>يستطيع مشرفو التطبيق (الشيخ وفريقه) الاطلاع على الأسئلة التي ترسلها وعلى تفاصيل الحساب المرتبطة بها. لا نشارك معلوماتك مع أي جهة أخرى، إلا إذا ألزم القانون بذلك.</p>
+  <h2>٣. كيف نستخدم المعلومات</h2>
+  <ul>
+    <li>لإنشاء حسابك وإدارته وتسجيل دخولك؛</li>
+    <li>لعرض الأخبار والفعاليات واستقبال الأسئلة الموجّهة إلى الشيخ؛</li>
+    <li>لإرسال الإشعارات التي اخترت تلقّيها؛</li>
+    <li>لحساب مواقيت الصلاة والقبلة على جهازك؛</li>
+    <li>للحفاظ على أمان التطبيق ولالتزام القانون.</li>
+  </ul>
 
-    <h2>6. الاحتفاظ بالبيانات وحذفها</h2>
-    <p>نحتفظ بمعلوماتك ما دام حسابك نشطًا. يمكنك حذف حسابك من داخل التطبيق، فتُزال بيانات حسابك وملفك الشخصي. ويمكنك أيضًا طلب حذف بياناتك بمراسلتنا على <a href="mailto:ahmadelzayed@gmail.com">ahmadelzayed@gmail.com</a> من البريد الإلكتروني المسجّل في حسابك.</p>
+  <h2>٤. الأذونات التي قد يطلبها التطبيق</h2>
+  <ul>
+    <li><strong>الإشعارات</strong>، لعرض تنبيهات الأخبار وتذكيرات الصلاة والجمعة.</li>
+    <li><strong>المنبّهات الدقيقة وإكمال الإقلاع</strong> (أندرويد)، كي تعمل تذكيرات الصلاة في وقتها بالضبط وتُعاد جدولتها بعد إعادة تشغيل الهاتف.</li>
+    <li><strong>الموقع التقريبي</strong>، لمواقيت الصلاة والقبلة. يمكنك رفضه.</li>
+    <li><strong>معرض الصور أو الكاميرا</strong>، فقط للمشرفين الذين يضيفون صورًا إلى المنشورات أو يضبطون صورة شخصية.</li>
+    <li><strong>الاتصال بالإنترنت وحالة الشبكة والاهتزاز ومنع السكون</strong>، لتحميل المحتوى وإيصال التذكيرات.</li>
+  </ul>
 
-    <h2>7. خياراتك</h2>
-    <ul>
-      <li>يمكنك عرض ملفك الشخصي وتعديله داخل التطبيق.</li>
-      <li>يمكنك إيقاف إذن الموقع في أي وقت من إعدادات هاتفك، وعندها تعتمد مواقيت الصلاة على المدينة الافتراضية.</li>
-      <li>يمكنك إيقاف الإشعارات في أي وقت من إعدادات هاتفك.</li>
-    </ul>
+  <h2>٥. مزوّدو الخدمة والتخزين</h2>
+  <p>نستخدم Google Firebase (المصادقة وCloud Firestore وCloud Storage وCloud Functions وCloud Messaging) لتشغيل التطبيق. تُخزَّن بياناتك وتُعالَج على خوادم Google وفق شروط الخصوصية الخاصة بها: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. أما تسجيل الدخول عبر Google أو Apple فتتولاه هاتان الشركتان. ونص القرآن مأخوذ من مشروع تنزيل (Tanzil) ومضمَّن داخل التطبيق.</p>
 
-    <h2>8. الأطفال</h2>
-    <p>التطبيق غير موجّه للأطفال دون سن 13 عامًا، ولا نجمع معلوماتهم عن علم. إذا ظننت أن طفلًا قدّم لنا معلومات، تواصل معنا وسنحذفها.</p>
+  <h2>٦. المشاركة</h2>
+  <p>لا نشارك معلوماتك الشخصية مع أطراف ثالثة، باستثناء Google بصفتها مزوّد خدمة كما ورد أعلاه، أو حين يفرض القانون ذلك. أما المنشورات التي يكتبها المشرفون، باسم المشرف وصورته، فيراها جميع المستخدمين المسجّلين.</p>
 
-    <h2>9. الأمان</h2>
-    <p>نعتمد على ميزات الأمان وقواعد الوصول في Firebase لحماية بياناتك. لا يوجد نظام آمن بالكامل، لكننا نحرص على حفظ معلوماتك.</p>
+  <h2>٧. الاحتفاظ بالبيانات وحذفها</h2>
+  <p>نحتفظ بمعلومات حسابك ما دام الحساب قائمًا. يمكنك حذف حسابك في أي وقت من داخل التطبيق (شاشة الملف الشخصي، «حذف الحساب»)، فيُحذف ملفك الشخصي وحساب الدخول (وصورة المشرف الشخصية إن وُجدت). ويمكنك أيضًا طلب الحذف بالبريد الإلكتروني كما هو موضّح في <a href="delete-account.html">صفحة حذف الحساب</a>. أما الأسئلة التي أرسلتها فغير مرتبطة بك، وتبقى نصًّا مجهول المصدر.</p>
 
-    <h2>10. تغيير هذه السياسة</h2>
-    <p>إذا غيّرنا هذه السياسة فسنحدّث التاريخ في أعلى هذه الصفحة، فيُرجى مراجعتها من حين لآخر.</p>
+  <h2>٨. الأطفال</h2>
+  <p>التطبيق موجّه إلى عموم الناس وليس مصمَّمًا للأطفال، ولا نجمع عمدًا معلومات من أطفال دون الثالثة عشرة. إذا ظننت أن طفلًا أنشأ حسابًا فتواصل معنا لنحذفه.</p>
 
-    <h2>11. التواصل</h2>
-    <p>أحمد زايد &middot; <a href="mailto:ahmadelzayed@gmail.com">ahmadelzayed@gmail.com</a></p>
-  </article>
+  <h2>٩. الأمان</h2>
+  <p>تنتقل البيانات عبر اتصالات مشفّرة، ويُقيَّد الوصول إلى البيانات المخزّنة بقواعد أمان تتيح لكل مستخدم قراءة ما يحق له فقط. لا يوجد نظام آمن تمامًا، لكننا نعمل على حماية معلوماتك.</p>
+
+  <h2>١٠. تعديل هذه السياسة</h2>
+  <p>قد نحدّث هذه السياسة، ويظهر تاريخ السريان في أعلاها لبيان آخر نسخة، وسنعلن عن التغييرات المهمة داخل التطبيق.</p>
+
+  <h2>١١. التواصل</h2>
+  <p>للاستفسارات والطلبات المتعلقة ببياناتك: <a href="mailto:ahmadelzayed@gmail.com">ahmadelzayed@gmail.com</a></p>
+</section>
 </main>
-
-<script>
-  (function () {
-    var en = document.getElementById('en');
-    var ar = document.getElementById('ar');
-    var bEn = document.getElementById('btn-en');
-    var bAr = document.getElementById('btn-ar');
-
-    function show(lang) {
-      var isAr = lang === 'ar';
-      ar.classList.toggle('show', isAr);
-      en.classList.toggle('show', !isAr);
-      bAr.classList.toggle('active', isAr);
-      bEn.classList.toggle('active', !isAr);
-      document.documentElement.lang = isAr ? 'ar' : 'en';
-      document.title = isAr
-        ? 'سياسة الخصوصية | تطبيق الشيخ أبو بكر الذهبي'
-        : 'Privacy Policy | Sheikh Abou Baker Al-Zahabi App';
-    }
-
-    bEn.addEventListener('click', function () { show('en'); });
-    bAr.addEventListener('click', function () { show('ar'); });
-
-    if (/[?&]lang=ar/.test(location.search)) show('ar');
-  })();
-</script>
 </body>
 </html>
